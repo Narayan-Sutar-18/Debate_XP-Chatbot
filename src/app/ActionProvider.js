@@ -1,7 +1,8 @@
 import OpenAI from "openai"
+
 const openAI = new OpenAI({
-    apiKey: `ff07f3c1098e4680b0c488672d13ca4d`,
-    baseURL: "https://api.aimlapi.com",
+    apiKey: `${process.env.NEXT_PUBLIC_apikey}`,
+    baseURL: "https://api.aimlapi.com/v1",
     dangerouslyAllowBrowser: true
 })
 class ActionProvider {
